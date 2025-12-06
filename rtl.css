@@ -1,0 +1,90 @@
+/* RTL Overrides */
+body {
+    text-align: right;
+}
+
+/* Header */
+.header-content {
+    direction: rtl;
+}
+
+.logo-icon {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+nav a.active::after {
+    left: auto;
+    right: 0;
+}
+
+.header-actions {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+/* Make sure mobile menu button stays right */
+@media (max-width: 768px) {
+    .header-content {
+        justify-content: space-between;
+    }
+    .header-actions {
+        margin-right: 0;
+    }
+}
+
+/* Cart Panel from Left */
+.cart-panel {
+    right: auto;
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.cart-panel.active {
+    transform: translateX(0);
+}
+
+.cart-header {
+    direction: rtl;
+}
+
+.close-cart-btn {
+    left: 20px;
+    right: auto;
+}
+
+.cart-item {
+    direction: rtl;
+}
+
+.cart-item-img {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.cart-summary {
+    direction: rtl;
+}
+
+/* User Info Modal */
+.modal-content, .modal-content h3 {
+    text-align: right;
+}
+
+.close-btn {
+    right: auto;
+    left: 20px;
+}
+
+.form-group label {
+    text-align: right;
+}
+
+.form-actions {
+    text-align: left;
+}
+
+/* Footer */
+.footer-content {
+    text-align: right;
+}

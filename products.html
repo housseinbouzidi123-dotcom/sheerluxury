@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheer Luxury | جميع المنتجات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rtl.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <a href="index.html"><h1>Sheer <span>Luxury</span></h1></a>
+                </div>
+                
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html" class="active">منتجات</a></li>
+                        <li><a href="offers.html">عروض</a></li>
+                        <li><a href="index.html#contact" id="navContactLink">تواصل معنا</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" style="padding-top: 40px; padding-bottom: 80px;">
+        <h2 class="section-title">جميع <span>المنتجات</span></h2>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/250/C9A96E/FFFFFF?text=Watch" alt="ساعة كرونوغراف ذهبية كلاسيكية">
+                </div>
+                <div class="product-info">
+                    <h3>ساعة كرونوغراف ذهبية كلاسيكية</h3>
+                    <p class="product-price">1850 MAD</p>
+                    <p>ساعة كرونوغراف ذهبية بتفاصيل مستوحاة من الطابع المغربي.</p>
+                    <button class="add-to-cart" data-id="1" data-name="ساعة كرونوغراف ذهبية كلاسيكية" data-price="1850" data-image="https://via.placeholder.com/80/C9A96E/FFFFFF?text=Watch">أضف إلى السلة</button>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/250/C9A96E/FFFFFF?text=Argan+Oil" alt="مجموعة زيت الأرغان الفاخرة">
+                </div>
+                <div class="product-info">
+                    <h3>مجموعة زيت الأرغان الفاخرة</h3>
+                    <p class="product-price">420 MAD</p>
+                    <p>مجموعة زيت الأرغان الفاخرة للبشرة والشعر، من مصادر مغربية.</p>
+                    <button class="add-to-cart" data-id="2" data-name="مجموعة زيت الأرغان الفاخرة" data-price="420" data-image="https://via.placeholder.com/80/C9A96E/FFFFFF?text=Argan+Oil">أضف إلى السلة</button>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/250/C9A96E/FFFFFF?text=Cufflinks" alt="طقم أزرار أكمام فضية">
+                </div>
+                <div class="product-info">
+                    <h3>طقم أزرار أكمام فضية</h3>
+                    <p class="product-price">320 MAD</p>
+                    <p>أزرار أكمام فضية أنيقة بنقوش هندسية معقدة.</p>
+                    <button class="add-to-cart" data-id="3" data-name="طقم أزرار أكمام فضية" data-price="320" data-image="https://via.placeholder.com/80/C9A96E/FFFFFF?text=Cufflinks">أضف إلى السلة</button>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/250/C9A96E/FFFFFF?text=Perfume" alt="عطر عنبر وعود">
+                </div>
+                <div class="product-info">
+                    <h3>عطر عنبر وعود</h3>
+                    <p class="product-price">680 MAD</p>
+                    <p>عطر فاخر بنفحات من العنبر والعود والورد المغربي.</p>
+                    <button class="add-to-cart" data-id="4" data-name="عطر عنبر وعود" data-price="680" data-image="https://via.placeholder.com/80/C9A96E/FFFFFF?text=Perfume">أضف إلى السلة</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Cart Panel, User Info Modal, etc. would be here -->
+    <!-- Cart Panel -->
+    <div id="cart-panel" class="cart-panel">
+        <div class="cart-header">
+            <h3>سلتك</h3>
+            <button class="close-cart-btn">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <div class="cart-summary">
+            <div class="summary-total">
+                <span>الإجمالي:</span>
+                <span id="cart-total">0 MAD</span>
+            </div>
+            <button class="btn checkout-btn">إتمام الدفع</button>
+        </div>
+    </div>
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <!-- User Info Modal -->
+    <div id="userInfoModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn user-info-close">&times;</button>
+            <h3>أدخل معلوماتك</h3>
+            <form id="userInfoForm">
+                <div class="form-group">
+                    <label for="fullName">الاسم الكامل</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="أدخل اسمك الكامل" required>
+                    <p class="error-message" id="fullNameErrorUserInfo"></p>
+                </div>
+                <div class="form-group">
+                    <label for="address">العنوان</label>
+                    <input type="text" id="address" name="address" placeholder="أدخل عنوان الشحن" required>
+                    <p class="error-message" id="addressErrorUserInfo"></p>
+                </div>
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف</label>
+                    <input type="tel" id="phone" name="phone" placeholder="أدخل رقم هاتفك" required>
+                    <p class="error-message" id="phoneErrorUserInfo"></p>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn">تأكيد الطلب</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Sheer <span>Luxury</span></h4>
+                    <p>نقدم منتجات تجميل فاخرة وإكسسوارات رجالية راقية للمتسوقين المغاربة منذ 2020.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>روابط <span>سريعة</span></h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html">منتجات</a></li>
+                        <li><a href="offers.html">عروض</a></li>
+                        <li><a href="index.html#bestSellersSection">الأكثر مبيعًا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>خدمة <span>العملاء</span></h4>
+                    <ul>
+                        <li><a href="index.html#contact">تواصل معنا</a></li>
+                        <li><a href="#">سياسة الشحن</a></li>
+                        <li><a href="#">الإرجاع والاستبدال</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>معلومات <span>التواصل</span></h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> الدار البيضاء، المغرب</li>
+                        <li><i class="fas fa-phone"></i> +212 5 XX XX XX XX</li>
+                        <li><i class="fas fa-envelope"></i> info@sheerluxury.ma</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Sheer Luxury. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn contact-close">&times;</button>
+            <h3>تواصل <span>معنا</span></h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="contactFullName">الاسم الكامل</label>
+                    <input type="text" id="contactFullName" name="contactFullName" placeholder="أدخل اسمك الكامل" required>
+                    <p class="error-message" id="fullNameError"></p>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">البريد الإلكتروني</label>
+                    <input type="email" id="contactEmail" name="contactEmail" placeholder="أدخل بريدك الإلكتروني" required>
+                    <p class="error-message" id="emailError"></p>
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">رسالتك</label>
+                    <textarea id="contactMessage" name="contactMessage" placeholder="اكتب رسالتك هنا" rows="5" required></textarea>
+                    <p class="error-message" id="messageError"></p>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn">إرسال الرسالة</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
